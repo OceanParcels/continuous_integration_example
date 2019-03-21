@@ -1,0 +1,33 @@
+language: python
+
+notifications:
+  email: false
+
+matrix:
+  include:
+    - os: linux
+      env: PY_VERSION=2 MINICONDA_NAME=Miniconda2-latest-Linux-x86_64.sh
+    - os: linux
+      env: PY_VERSION=3 MINICONDA_NAME=Miniconda3-latest-Linux-x86_64.sh
+    - os: osx
+      language: generic
+      env: PY_VERSION=2 MINICONDA_NAME=Miniconda2-latest-MacOSX-x86_64.sh
+    - os: osx
+      language: generic
+      env: PY_VERSION=3 MINICONDA_NAME=Miniconda3-latest-MacOSX-x86_64.sh
+    - os: osx
+      osx_image: xcode9.3
+      language: generic
+      env: PY_VERSION=3 MINICONDA_NAME=Miniconda3-latest-MacOSX-x86_64.sh
+
+install:
+    - wget http://repo.continuum.io/miniconda/${MINICONDA_NAME} -O miniconda.sh;
+    - bash miniconda.sh -b -p $HOME/miniconda
+    - export PATH="$HOME/miniconda/bin:$PATH"
+    - conda create --name testing_env --yes
+    - source activate testing_env
+    - conda install numpy --yes
+
+script:
+    - pytest .
+
