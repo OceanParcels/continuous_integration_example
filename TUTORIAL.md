@@ -42,7 +42,7 @@ F[n] = F[n-1] + F[n-2]
 ## Using github and Travis
 Using Travis CI, you can automatically test every commit you push on github. 
 ### How to get started with Travis (see more info in the [Travis tutorial](https://docs.travis-ci.com/user/tutorial/))?
- * You can find [Travic CI](https://github.com/marketplace/travis-ci) (and other Github Apps) on the [Github Marketplace]( https://github.com/marketplace)
+ * You can find [Travic CI](https://github.com/marketplace/travis-ci) (and other Github Apps) on the [Github Marketplace]( https://github.com/marketplace).
  * Install and configure Travis, selecting the repository you want to test.
  * Add a .travis.yml file to your repository to tell Travis CI what to do.
    * Travis can test your code using different versions of Python.
