@@ -41,13 +41,13 @@ F[n] = F[n-1] + F[n-2]
 
 ## Using github and Travis
 Using Travis CI, you can automatically test very commit you push on github. 
-### How to get started with Travis (this info comes from the [Travis tutorial]{https://docs.travis-ci.com/user/tutorial/}?
+### How to get started with Travis (see more info in the [Travis tutorial](https://docs.travis-ci.com/user/tutorial/))?
  * Go to Travis-ci.com and Sign up with GitHub.
  * Accept the Authorization of Travis CI. You’ll be redirected to GitHub.
  * Click the green Activate button, and select the repositories you want to use with Travis CI.
  * Add a .travis.yml file to your repository to tell Travis CI what to do.
    * Travis can test your code using different versions of Python.
-     See this example of [.travis.yml(https://github.com/OceanParcels/continuous_integration_example/blob/master/travis.yml.simple)
+     See this example of [.travis.yml](https://github.com/OceanParcels/continuous_integration_example/blob/master/travis.yml.simple)
    * Testing Python under OSX is currently broken. You can't to dit as for the linux example above, but you can still
      test an OSX Python by installing it with conda. To use any conda environment, you can also use such approach, with this
      [.travis.yml](https://github.com/OceanParcels/continuous_integration_example/blob/master/.travis.yml)
