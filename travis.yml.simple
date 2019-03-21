@@ -1,3 +1,4 @@
+# this is an idealised example of travis file, but broken since python is currently broken on osx
 language: python
 
 notifications:
