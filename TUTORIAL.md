@@ -53,3 +53,6 @@ Using Travis CI, you can automatically test very commit you push on github.
      [.travis.yml](https://github.com/OceanParcels/continuous_integration_example/blob/master/.travis.yml)
  * Now, each time you'll push a commit on github, your full code will be tested.
  * You can setup Travis in your settings to only test master branch, every branch, the pull requests, etc.
+ 
+### The AppVeyor CI tool
+To test your code on Windows, you can use [AppVeyor](https://www.appveyor.com), which is similar to Travis.
